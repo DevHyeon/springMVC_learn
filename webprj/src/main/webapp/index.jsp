@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-index
+		<h1>Hi${data}</h1>
 
 </body>
 </html>
