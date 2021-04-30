@@ -12,7 +12,7 @@ public class DetailController implements Controller {
 	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
 		System.out.println("Controller");
-		ModelAndView mv = new ModelAndView("notice/detail");
+		ModelAndView mv = new ModelAndView("notice.detail");
 		mv.addObject("data", "Hello Spring MVC~");
 		// mv.setViewName("/WEB-INF/view/index.jsp");
 
