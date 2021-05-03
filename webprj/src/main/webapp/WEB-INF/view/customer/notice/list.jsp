@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <main class="main">
 	<h2 class="main title">공지사항</h2>
@@ -48,7 +48,7 @@
 					<td>${n.id}</td>
 					<td class="title indent text-align-left"><a
 						href="/notice/detail">${n.title}</a></td>
-					<td>${n.wirterId}</td>
+					<td>${n.writerId}</td>
 					<td>${n.regDate}</td>
 					<td>${n.hit}</td>
 				</tr>
