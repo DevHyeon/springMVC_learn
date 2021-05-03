@@ -11,16 +11,16 @@ import java.util.List;
 
 import javax.sql.DataSource;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import com.comes.web.service.NoticeService;
 import com.comes.web.service.entity.Notice;
 
 public class JDBCNoticeService implements NoticeService {
-
+	
+	@Autowired
 	private DataSource dataSource;
 
-	public void setDataSource(DataSource dataSource) {
-		this.dataSource = dataSource;
-	}
 
 	public List<Notice> getList(int page, String field, String query) throws ClassNotFoundException, SQLException {
 
