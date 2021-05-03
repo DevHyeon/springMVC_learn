@@ -10,17 +10,8 @@
         http://www.springframework.org/schema/context
         https://www.springframework.org/schema/context/spring-context.xsd">
         
-    <context:annotation-config/>
+    <context:component-scan base-package="com.comes.web.controller"/>
 
-	<bean name="/index"
-		class="com.comes.web.controller.IndexController" />
-	<bean name="/notice/list"
-		class="com.comes.web.controller.notice.ListController">
-		<!-- <property name="noticeService" ref="noticeService"></property> -->
-
-	</bean>
-	<bean name="/notice/detail"
-		class="com.comes.web.controller.notice.DetailController" />
 
 	<bean
 		class="org.springframework.web.servlet.view.UrlBasedViewResolver">
@@ -42,6 +33,7 @@
 	</bean>
 
 	<mvc:resources location="/static/" mapping="/**"></mvc:resources>
+	<mvc:annotation-driven/>
 
 
 </beans>

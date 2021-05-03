@@ -12,10 +12,13 @@ import java.util.List;
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import com.comes.web.service.NoticeService;
 import com.comes.web.service.entity.Notice;
 
+@Service
 public class JDBCNoticeService implements NoticeService {
 	
 	@Autowired
